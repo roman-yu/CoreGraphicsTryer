@@ -14,6 +14,9 @@
 		3053B0531B5620050057B62A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3053B0521B5620050057B62A /* Images.xcassets */; };
 		3053B0561B5620050057B62A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3053B0541B5620050057B62A /* LaunchScreen.xib */; };
 		3053B0621B5620050057B62A /* CoreGraphicsTryerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3053B0611B5620050057B62A /* CoreGraphicsTryerTests.m */; };
+		3053B06E1B5620430057B62A /* CoolTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3053B06D1B5620430057B62A /* CoolTableViewController.m */; };
+		30EB3F0F1B564D26007CDD00 /* BPRTPolygonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EB3F0E1B564D26007CDD00 /* BPRTPolygonView.m */; };
+		368966825D2E0EE5489FDA9E /* libPods-CoreGraphicsTryer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD1C2B36077170CD16BA7BE /* libPods-CoreGraphicsTryer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CD1C2B36077170CD16BA7BE /* libPods-CoreGraphicsTryer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreGraphicsTryer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3053B0421B5620050057B62A /* CoreGraphicsTryer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreGraphicsTryer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3053B0461B5620050057B62A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3053B0471B5620050057B62A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,13 @@
 		3053B05B1B5620050057B62A /* CoreGraphicsTryerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreGraphicsTryerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3053B0601B5620050057B62A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3053B0611B5620050057B62A /* CoreGraphicsTryerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsTryerTests.m; sourceTree = "<group>"; };
+		3053B06C1B5620430057B62A /* CoolTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolTableViewController.h; sourceTree = "<group>"; };
+		3053B06D1B5620430057B62A /* CoolTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolTableViewController.m; sourceTree = "<group>"; };
+		3053B06F1B5621D70057B62A /* CoreGraphicsTryer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreGraphicsTryer-Prefix.pch"; sourceTree = "<group>"; };
+		30EB3F0D1B564D26007CDD00 /* BPRTPolygonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRTPolygonView.h; sourceTree = "<group>"; };
+		30EB3F0E1B564D26007CDD00 /* BPRTPolygonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTPolygonView.m; sourceTree = "<group>"; };
+		9633E9259B0CAE3BFAB9304C /* Pods-CoreGraphicsTryer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreGraphicsTryer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreGraphicsTryer/Pods-CoreGraphicsTryer.debug.xcconfig"; sourceTree = "<group>"; };
+		BBE21D1F1A32DC26A060196A /* Pods-CoreGraphicsTryer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreGraphicsTryer.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreGraphicsTryer/Pods-CoreGraphicsTryer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368966825D2E0EE5489FDA9E /* libPods-CoreGraphicsTryer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +72,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AF0E585E7BC1A13EECC9B24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CD1C2B36077170CD16BA7BE /* libPods-CoreGraphicsTryer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3053B0391B5620050057B62A = {
 			isa = PBXGroup;
 			children = (
 				3053B0441B5620050057B62A /* CoreGraphicsTryer */,
 				3053B05E1B5620050057B62A /* CoreGraphicsTryerTests */,
 				3053B0431B5620050057B62A /* Products */,
+				57E0F9B6A3A9713AB574CF5E /* Pods */,
+				0AF0E585E7BC1A13EECC9B24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +103,8 @@
 		3053B0441B5620050057B62A /* CoreGraphicsTryer */ = {
 			isa = PBXGroup;
 			children = (
+				30EB3F0C1B564CDB007CDD00 /* Components */,
+				3053B06B1B5620250057B62A /* Controllers */,
 				3053B0491B5620050057B62A /* AppDelegate.h */,
 				3053B04A1B5620050057B62A /* AppDelegate.m */,
 				3053B04C1B5620050057B62A /* ViewController.h */,
@@ -98,6 +122,7 @@
 			children = (
 				3053B0461B5620050057B62A /* Info.plist */,
 				3053B0471B5620050057B62A /* main.m */,
+				3053B06F1B5621D70057B62A /* CoreGraphicsTryer-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -119,6 +144,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3053B06B1B5620250057B62A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3053B06C1B5620430057B62A /* CoolTableViewController.h */,
+				3053B06D1B5620430057B62A /* CoolTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		30EB3F0C1B564CDB007CDD00 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				30EB3F0D1B564D26007CDD00 /* BPRTPolygonView.h */,
+				30EB3F0E1B564D26007CDD00 /* BPRTPolygonView.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		57E0F9B6A3A9713AB574CF5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9633E9259B0CAE3BFAB9304C /* Pods-CoreGraphicsTryer.debug.xcconfig */,
+				BBE21D1F1A32DC26A060196A /* Pods-CoreGraphicsTryer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3053B0651B5620050057B62A /* Build configuration list for PBXNativeTarget "CoreGraphicsTryer" */;
 			buildPhases = (
+				6134231BE7A6C327B87BFADC /* Check Pods Manifest.lock */,
 				3053B03E1B5620050057B62A /* Sources */,
 				3053B03F1B5620050057B62A /* Frameworks */,
 				3053B0401B5620050057B62A /* Resources */,
+				FA6FD40B9E14A50C1A7174D9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,13 +268,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6134231BE7A6C327B87BFADC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA6FD40B9E14A50C1A7174D9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreGraphicsTryer/Pods-CoreGraphicsTryer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3053B03E1B5620050057B62A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3053B06E1B5620430057B62A /* CoolTableViewController.m in Sources */,
 				3053B04E1B5620050057B62A /* ViewController.m in Sources */,
 				3053B04B1B5620050057B62A /* AppDelegate.m in Sources */,
+				30EB3F0F1B564D26007CDD00 /* BPRTPolygonView.m in Sources */,
 				3053B0481B5620050057B62A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,8 +436,11 @@
 		};
 		3053B0661B5620050057B62A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9633E9259B0CAE3BFAB9304C /* Pods-CoreGraphicsTryer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreGraphicsTryer/CoreGraphicsTryer-Prefix.pch";
 				INFOPLIST_FILE = CoreGraphicsTryer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,8 +449,11 @@
 		};
 		3053B0671B5620050057B62A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBE21D1F1A32DC26A060196A /* Pods-CoreGraphicsTryer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreGraphicsTryer/CoreGraphicsTryer-Prefix.pch";
 				INFOPLIST_FILE = CoreGraphicsTryer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,6 +513,7 @@
 				3053B0671B5620050057B62A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3053B0681B5620050057B62A /* Build configuration list for PBXNativeTarget "CoreGraphicsTryerTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +522,7 @@
 				3053B06A1B5620050057B62A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
