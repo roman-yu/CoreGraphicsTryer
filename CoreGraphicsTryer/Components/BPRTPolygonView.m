@@ -8,14 +8,48 @@
 
 #import "BPRTPolygonView.h"
 
+@interface BPRTPolygonView ()
+
+@property (nonatomic, ) CGGradientRef gradient;
+
+@end
+
 @implementation BPRTPolygonView
+
+#pragma mark - Getter
+
+- (CGGradientRef)gradient {
+    if(NULL == _gradient) {
+        CGFloat colors[6] = {138.0f/255.0f, 1.0f,
+            162.0f/255.0f, 1.0f,
+            206.0f/255.0f, 1.0f};
+        CGFloat locations[3] = {0.05f, 0.45f, 0.95f};
+        CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceGray();
+        _gradient = CGGradientCreateWithColorComponents(colorSpace, colors,
+                                                        locations, 3);
+        CGColorSpaceRelease(colorSpace);
+    }
+    return _gradient;
+}
+
+- (void)drawGradient {
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    CGGradientRef gradient = [self gradient];
+    CGPoint startPoint =
+    CGPointMake(CGRectGetMidX(self.bounds), 0.0);
+    CGPoint endPoint =
+    CGPointMake(CGRectGetMidX(self.bounds),
+                CGRectGetMaxY(self.bounds));
+    CGContextDrawLinearGradient(ctx, gradient,
+                                startPoint, endPoint, 0);
+}
 
 - (void)drawOctagon {
     
-//    CGContextRef ctx = UIGraphicsGetCurrentContext();
-//    CGContextSaveGState(ctx);
-//    CGFloat shadowHeight = 2.0;
-//    CGContextSetShadowWithColor(ctx, CGSizeMake(1.0, -shadowHeight), 0.0, [[UIColor orangeColor] CGColor]);
+    //    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    //    CGContextSaveGState(ctx);
+    //    CGFloat shadowHeight = 2.0;
+    //    CGContextSetShadowWithColor(ctx, CGSizeMake(1.0, -shadowHeight), 0.0, [[UIColor orangeColor] CGColor]);
     
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path moveToPoint:CGPointMake(16.72, 7.22)];
@@ -33,13 +67,13 @@
     [[UIColor redColor] setStroke];
     [path stroke];
     
-//    CGContextRestoreGState(ctx);
+    //    CGContextRestoreGState(ctx);
 }
 
 - (void)drawCircle {
     CGContextRef ctx = UIGraphicsGetCurrentContext();
-
-//    UIColor *yellowColor = [UIColor yellowColor];
+    
+    //    UIColor *yellowColor = [UIColor yellowColor];
     
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path addArcWithCenter:CGPointMake(self.frame.size.width / 2.0, self.frame.size.height / 2.0)
@@ -48,15 +82,15 @@
                   endAngle:2.0 * M_PI
                  clockwise:NO];
     
-//    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(20.0, 20.0, 20.0, 20.0)];
+    //    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(20.0, 20.0, 20.0, 20.0)];
     
-//    [yellowColor setFill];
+    //    [yellowColor setFill];
     CGContextSetFillColorWithColor(ctx, [UIColor yellowColor].CGColor);
     [path fill];
     
-//    CGContextAddRect(ctx, CGRectMake(100.0, 100.0, 40.0, 40.0));
-//    CGContextSetFillColorWithColor(ctx, [UIColor yellowColor].CGColor);
-//    CGContextFillPath(ctx);
+    //    CGContextAddRect(ctx, CGRectMake(100.0, 100.0, 40.0, 40.0));
+    //    CGContextSetFillColorWithColor(ctx, [UIColor yellowColor].CGColor);
+    //    CGContextFillPath(ctx);
 }
 
 - (void)fillPath {
@@ -82,6 +116,14 @@
     CGContextRestoreGState(ctx);
 }
 
+- (void)drawRoundedRect {
+    UIBezierPath* path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(10, 10, 20, 5)
+                                               byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight
+                                                     cornerRadii:CGSizeMake(5.0, 5.0)];
+    [UIColor.blackColor setFill];
+    [path fill];
+}
+
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
@@ -99,7 +141,10 @@
     [self fillPath];
     
     [self drawCircle];
-//    [self drawShadow];
+    
+    [self drawGradient];
+    
+    [self drawRoundedRect];
     
 }
 
