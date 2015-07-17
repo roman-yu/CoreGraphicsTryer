@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3046E5231B58F7180093F6ED /* BPRTPolygonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3046E5201B58F7180093F6ED /* BPRTPolygonView.m */; };
+		3046E5241B58F7180093F6ED /* BPRTRectTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3046E5221B58F7180093F6ED /* BPRTRectTable.m */; };
 		3053B0481B5620050057B62A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3053B0471B5620050057B62A /* main.m */; };
 		3053B04B1B5620050057B62A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3053B04A1B5620050057B62A /* AppDelegate.m */; };
 		3053B04E1B5620050057B62A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3053B04D1B5620050057B62A /* ViewController.m */; };
@@ -15,7 +17,6 @@
 		3053B0561B5620050057B62A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3053B0541B5620050057B62A /* LaunchScreen.xib */; };
 		3053B0621B5620050057B62A /* CoreGraphicsTryerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3053B0611B5620050057B62A /* CoreGraphicsTryerTests.m */; };
 		3053B06E1B5620430057B62A /* CoolTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3053B06D1B5620430057B62A /* CoolTableViewController.m */; };
-		30EB3F0F1B564D26007CDD00 /* BPRTPolygonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EB3F0E1B564D26007CDD00 /* BPRTPolygonView.m */; };
 		368966825D2E0EE5489FDA9E /* libPods-CoreGraphicsTryer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD1C2B36077170CD16BA7BE /* libPods-CoreGraphicsTryer.a */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,10 @@
 
 /* Begin PBXFileReference section */
 		2CD1C2B36077170CD16BA7BE /* libPods-CoreGraphicsTryer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreGraphicsTryer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3046E51F1B58F7180093F6ED /* BPRTPolygonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRTPolygonView.h; sourceTree = "<group>"; };
+		3046E5201B58F7180093F6ED /* BPRTPolygonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTPolygonView.m; sourceTree = "<group>"; };
+		3046E5211B58F7180093F6ED /* BPRTRectTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRTRectTable.h; sourceTree = "<group>"; };
+		3046E5221B58F7180093F6ED /* BPRTRectTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTRectTable.m; sourceTree = "<group>"; };
 		3053B0421B5620050057B62A /* CoreGraphicsTryer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreGraphicsTryer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3053B0461B5620050057B62A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3053B0471B5620050057B62A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,8 +52,6 @@
 		3053B06C1B5620430057B62A /* CoolTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolTableViewController.h; sourceTree = "<group>"; };
 		3053B06D1B5620430057B62A /* CoolTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolTableViewController.m; sourceTree = "<group>"; };
 		3053B06F1B5621D70057B62A /* CoreGraphicsTryer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreGraphicsTryer-Prefix.pch"; sourceTree = "<group>"; };
-		30EB3F0D1B564D26007CDD00 /* BPRTPolygonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRTPolygonView.h; sourceTree = "<group>"; };
-		30EB3F0E1B564D26007CDD00 /* BPRTPolygonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTPolygonView.m; sourceTree = "<group>"; };
 		9633E9259B0CAE3BFAB9304C /* Pods-CoreGraphicsTryer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreGraphicsTryer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreGraphicsTryer/Pods-CoreGraphicsTryer.debug.xcconfig"; sourceTree = "<group>"; };
 		BBE21D1F1A32DC26A060196A /* Pods-CoreGraphicsTryer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreGraphicsTryer.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreGraphicsTryer/Pods-CoreGraphicsTryer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +83,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3046E51E1B58F7180093F6ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3046E5211B58F7180093F6ED /* BPRTRectTable.h */,
+				3046E5221B58F7180093F6ED /* BPRTRectTable.m */,
+				3046E51F1B58F7180093F6ED /* BPRTPolygonView.h */,
+				3046E5201B58F7180093F6ED /* BPRTPolygonView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3053B0391B5620050057B62A = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +117,7 @@
 		3053B0441B5620050057B62A /* CoreGraphicsTryer */ = {
 			isa = PBXGroup;
 			children = (
-				30EB3F0C1B564CDB007CDD00 /* Components */,
+				3046E51E1B58F7180093F6ED /* Views */,
 				3053B06B1B5620250057B62A /* Controllers */,
 				3053B0491B5620050057B62A /* AppDelegate.h */,
 				3053B04A1B5620050057B62A /* AppDelegate.m */,
@@ -151,15 +165,6 @@
 				3053B06D1B5620430057B62A /* CoolTableViewController.m */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		30EB3F0C1B564CDB007CDD00 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				30EB3F0D1B564D26007CDD00 /* BPRTPolygonView.h */,
-				30EB3F0E1B564D26007CDD00 /* BPRTPolygonView.m */,
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		57E0F9B6A3A9713AB574CF5E /* Pods */ = {
@@ -306,10 +311,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3046E5241B58F7180093F6ED /* BPRTRectTable.m in Sources */,
 				3053B06E1B5620430057B62A /* CoolTableViewController.m in Sources */,
 				3053B04E1B5620050057B62A /* ViewController.m in Sources */,
 				3053B04B1B5620050057B62A /* AppDelegate.m in Sources */,
-				30EB3F0F1B564D26007CDD00 /* BPRTPolygonView.m in Sources */,
+				3046E5231B58F7180093F6ED /* BPRTPolygonView.m in Sources */,
 				3053B0481B5620050057B62A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

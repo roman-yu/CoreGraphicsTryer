@@ -8,7 +8,11 @@
 
 #import "ViewController.h"
 
+#import "BPRTRectTable.h"
+
 @interface ViewController ()
+
+@property (nonatomic, strong) BPRTRectTable *rectTable;
 
 @end
 
@@ -16,7 +20,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor colorWithRed:241.0 / 255.0 green:243.0 / 255.0 blue:246.0 / 255.0 alpha:1.0];
+    
+    self.rectTable = [[BPRTRectTable alloc] initWithNumberOfSeats:1 tableSided:TableSidedOne];
+    [self.view addSubview:self.rectTable];
+}
+
+- (void)updateViewConstraints {
+    
+    [self.rectTable autoCenterInSuperview];
+    [self.rectTable autoSetDimensionsToSize:CGSizeMake(66.f, 86.f)];
+    
+    [super updateViewConstraints];
 }
 
 - (void)didReceiveMemoryWarning {
