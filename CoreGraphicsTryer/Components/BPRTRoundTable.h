@@ -1,5 +1,5 @@
 //
-//  BPRTCircleTable.h
+//  BPRTRoundTable.h
 //  CoreGraphicsTryer
 //
 //  Created by Roman-yu on 7/20/15.
@@ -8,6 +8,6 @@
 
 #import "BPRTBaseTable.h"
 
-@interface BPRTCircleTable : BPRTBaseTable
+@interface BPRTRoundTable : BPRTBaseTable
 
 @end

@@ -1,14 +1,14 @@
 //
-//  BPRTCircleTable.m
+//  BPRTRoundTable.m
 //  CoreGraphicsTryer
 //
 //  Created by Roman-yu on 7/20/15.
 //  Copyright (c) 2015 Chen YU. All rights reserved.
 //
 
-#import "BPRTCircleTable.h"
+#import "BPRTRoundTable.h"
 
-@interface BPRTCircleTable ()
+@interface BPRTRoundTable ()
 
 @property (nonatomic, assign) CGFloat radius;
 @property (nonatomic, assign) NSInteger numberOfSeats;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation BPRTCircleTable
+@implementation BPRTRoundTable
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
