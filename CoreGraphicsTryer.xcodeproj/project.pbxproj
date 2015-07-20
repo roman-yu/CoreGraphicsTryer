@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3046E5231B58F7180093F6ED /* BPRTPolygonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3046E5201B58F7180093F6ED /* BPRTPolygonView.m */; };
-		3046E5241B58F7180093F6ED /* BPRTRectTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3046E5221B58F7180093F6ED /* BPRTRectTable.m */; };
 		3053B0481B5620050057B62A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3053B0471B5620050057B62A /* main.m */; };
 		3053B04B1B5620050057B62A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3053B04A1B5620050057B62A /* AppDelegate.m */; };
 		3053B04E1B5620050057B62A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3053B04D1B5620050057B62A /* ViewController.m */; };
@@ -18,6 +16,10 @@
 		3053B0621B5620050057B62A /* CoreGraphicsTryerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3053B0611B5620050057B62A /* CoreGraphicsTryerTests.m */; };
 		3053B06E1B5620430057B62A /* CoolTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3053B06D1B5620430057B62A /* CoolTableViewController.m */; };
 		368966825D2E0EE5489FDA9E /* libPods-CoreGraphicsTryer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD1C2B36077170CD16BA7BE /* libPods-CoreGraphicsTryer.a */; };
+		A8E913171B59F8230058EC38 /* BPRTPolygonView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E913141B59F8230058EC38 /* BPRTPolygonView.m */; };
+		A8E913181B59F8230058EC38 /* BPRTRectTable.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E913161B59F8230058EC38 /* BPRTRectTable.m */; };
+		A8E9131B1B59F8660058EC38 /* BPRTSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E9131A1B59F8660058EC38 /* BPRTSearchBar.m */; };
+		A8E913241B5A576E0058EC38 /* BPRTTableControlPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E913231B5A576E0058EC38 /* BPRTTableControlPanel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,10 +34,6 @@
 
 /* Begin PBXFileReference section */
 		2CD1C2B36077170CD16BA7BE /* libPods-CoreGraphicsTryer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreGraphicsTryer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3046E51F1B58F7180093F6ED /* BPRTPolygonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRTPolygonView.h; sourceTree = "<group>"; };
-		3046E5201B58F7180093F6ED /* BPRTPolygonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTPolygonView.m; sourceTree = "<group>"; };
-		3046E5211B58F7180093F6ED /* BPRTRectTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRTRectTable.h; sourceTree = "<group>"; };
-		3046E5221B58F7180093F6ED /* BPRTRectTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTRectTable.m; sourceTree = "<group>"; };
 		3053B0421B5620050057B62A /* CoreGraphicsTryer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreGraphicsTryer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3053B0461B5620050057B62A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3053B0471B5620050057B62A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -53,6 +51,14 @@
 		3053B06D1B5620430057B62A /* CoolTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolTableViewController.m; sourceTree = "<group>"; };
 		3053B06F1B5621D70057B62A /* CoreGraphicsTryer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreGraphicsTryer-Prefix.pch"; sourceTree = "<group>"; };
 		9633E9259B0CAE3BFAB9304C /* Pods-CoreGraphicsTryer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreGraphicsTryer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreGraphicsTryer/Pods-CoreGraphicsTryer.debug.xcconfig"; sourceTree = "<group>"; };
+		A8E913131B59F8230058EC38 /* BPRTPolygonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRTPolygonView.h; sourceTree = "<group>"; };
+		A8E913141B59F8230058EC38 /* BPRTPolygonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTPolygonView.m; sourceTree = "<group>"; };
+		A8E913151B59F8230058EC38 /* BPRTRectTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRTRectTable.h; sourceTree = "<group>"; };
+		A8E913161B59F8230058EC38 /* BPRTRectTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTRectTable.m; sourceTree = "<group>"; };
+		A8E913191B59F8660058EC38 /* BPRTSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRTSearchBar.h; sourceTree = "<group>"; };
+		A8E9131A1B59F8660058EC38 /* BPRTSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTSearchBar.m; sourceTree = "<group>"; };
+		A8E913221B5A576E0058EC38 /* BPRTTableControlPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRTTableControlPanel.h; sourceTree = "<group>"; };
+		A8E913231B5A576E0058EC38 /* BPRTTableControlPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTTableControlPanel.m; sourceTree = "<group>"; };
 		BBE21D1F1A32DC26A060196A /* Pods-CoreGraphicsTryer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreGraphicsTryer.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreGraphicsTryer/Pods-CoreGraphicsTryer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,17 +89,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3046E51E1B58F7180093F6ED /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				3046E5211B58F7180093F6ED /* BPRTRectTable.h */,
-				3046E5221B58F7180093F6ED /* BPRTRectTable.m */,
-				3046E51F1B58F7180093F6ED /* BPRTPolygonView.h */,
-				3046E5201B58F7180093F6ED /* BPRTPolygonView.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		3053B0391B5620050057B62A = {
 			isa = PBXGroup;
 			children = (
@@ -117,7 +112,7 @@
 		3053B0441B5620050057B62A /* CoreGraphicsTryer */ = {
 			isa = PBXGroup;
 			children = (
-				3046E51E1B58F7180093F6ED /* Views */,
+				A8E913121B59F8230058EC38 /* Components */,
 				3053B06B1B5620250057B62A /* Controllers */,
 				3053B0491B5620050057B62A /* AppDelegate.h */,
 				3053B04A1B5620050057B62A /* AppDelegate.m */,
@@ -174,6 +169,21 @@
 				BBE21D1F1A32DC26A060196A /* Pods-CoreGraphicsTryer.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A8E913121B59F8230058EC38 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A8E913131B59F8230058EC38 /* BPRTPolygonView.h */,
+				A8E913141B59F8230058EC38 /* BPRTPolygonView.m */,
+				A8E913151B59F8230058EC38 /* BPRTRectTable.h */,
+				A8E913161B59F8230058EC38 /* BPRTRectTable.m */,
+				A8E913191B59F8660058EC38 /* BPRTSearchBar.h */,
+				A8E9131A1B59F8660058EC38 /* BPRTSearchBar.m */,
+				A8E913221B5A576E0058EC38 /* BPRTTableControlPanel.h */,
+				A8E913231B5A576E0058EC38 /* BPRTTableControlPanel.m */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,12 +321,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3046E5241B58F7180093F6ED /* BPRTRectTable.m in Sources */,
+				A8E913181B59F8230058EC38 /* BPRTRectTable.m in Sources */,
 				3053B06E1B5620430057B62A /* CoolTableViewController.m in Sources */,
 				3053B04E1B5620050057B62A /* ViewController.m in Sources */,
 				3053B04B1B5620050057B62A /* AppDelegate.m in Sources */,
-				3046E5231B58F7180093F6ED /* BPRTPolygonView.m in Sources */,
+				A8E913241B5A576E0058EC38 /* BPRTTableControlPanel.m in Sources */,
+				A8E913171B59F8230058EC38 /* BPRTPolygonView.m in Sources */,
 				3053B0481B5620050057B62A /* main.m in Sources */,
+				A8E9131B1B59F8660058EC38 /* BPRTSearchBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
