@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300CF1F31B5CCFBC0070B025 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 300CF1F21B5CCFBC0070B025 /* Constants.m */; };
 		3053B0481B5620050057B62A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3053B0471B5620050057B62A /* main.m */; };
 		3053B04B1B5620050057B62A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3053B04A1B5620050057B62A /* AppDelegate.m */; };
 		3053B04E1B5620050057B62A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3053B04D1B5620050057B62A /* ViewController.m */; };
@@ -37,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		2CD1C2B36077170CD16BA7BE /* libPods-CoreGraphicsTryer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreGraphicsTryer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		300CF1F11B5CCFBC0070B025 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = CoreGraphicsTryer/Constants.h; sourceTree = SOURCE_ROOT; };
+		300CF1F21B5CCFBC0070B025 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = CoreGraphicsTryer/Constants.m; sourceTree = SOURCE_ROOT; };
 		3053B0421B5620050057B62A /* CoreGraphicsTryer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreGraphicsTryer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3053B0461B5620050057B62A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3053B0471B5620050057B62A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -121,6 +124,8 @@
 		3053B0441B5620050057B62A /* CoreGraphicsTryer */ = {
 			isa = PBXGroup;
 			children = (
+				300CF1F11B5CCFBC0070B025 /* Constants.h */,
+				300CF1F21B5CCFBC0070B025 /* Constants.m */,
 				A8E9132F1B5C78940058EC38 /* CommonHelpers.h */,
 				A8E913301B5C78940058EC38 /* CommonHelpers.m */,
 				A8E913121B59F8230058EC38 /* Components */,
@@ -347,6 +352,7 @@
 				A8E913171B59F8230058EC38 /* BPRTPolygonView.m in Sources */,
 				3053B0481B5620050057B62A /* main.m in Sources */,
 				A8E9131B1B59F8660058EC38 /* BPRTSearchBar.m in Sources */,
+				300CF1F31B5CCFBC0070B025 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Constants.h"
 
 typedef enum  {
     SeatDirectionTop = 0,
@@ -22,5 +23,7 @@ typedef enum  {
 } TableSided;
 
 @interface BPRTBaseTable : UIView
+
+- (void)drawSeatWithOrigin:(CGPoint)origin seatDirection:(SeatDirection)seatDirection;
 
 @end

@@ -45,10 +45,10 @@
     self.rectTable.frame = CGRectMake(200.f, 200.f, 66.f, 86.f);
     [self.view addSubview:self.rectTable];
     
-    self.circleTable = [[BPRTCircleTable alloc] initWithFrame:CGRectMake(200.f, 400.f, 140.f, 140.f)];
+    self.circleTable = [[BPRTCircleTable alloc] initWithFrame:CGRectMake(200.f, 400.f, 130.f + 16.f, 130.f + 16.f)];
     [self.view addSubview:self.circleTable];
     
-    self.controller = [[BPRTTableControlPanel alloc] initWithFrame:CGRectMake(400.f, 400.f + 0.5f, 200.f, 200.f)];
+    self.controller = [[BPRTTableControlPanel alloc] initWithFrame:CGRectMake(400.f, 400.f, 200.f, 200.f)];
     [self.view addSubview:self.controller];
     
     self.showSearchBar = NO;
