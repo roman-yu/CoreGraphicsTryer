@@ -20,6 +20,9 @@
 		A8E913181B59F8230058EC38 /* BPRTRectTable.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E913161B59F8230058EC38 /* BPRTRectTable.m */; };
 		A8E9131B1B59F8660058EC38 /* BPRTSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E9131A1B59F8660058EC38 /* BPRTSearchBar.m */; };
 		A8E913241B5A576E0058EC38 /* BPRTTableControlPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E913231B5A576E0058EC38 /* BPRTTableControlPanel.m */; };
+		A8E913311B5C78940058EC38 /* CommonHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E913301B5C78940058EC38 /* CommonHelpers.m */; };
+		A8E913341B5C7BC80058EC38 /* BPRTCircleTable.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E913331B5C7BC80058EC38 /* BPRTCircleTable.m */; };
+		A8E913371B5C7E3E0058EC38 /* BPRTBaseTable.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E913361B5C7E3E0058EC38 /* BPRTBaseTable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,12 @@
 		A8E9131A1B59F8660058EC38 /* BPRTSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTSearchBar.m; sourceTree = "<group>"; };
 		A8E913221B5A576E0058EC38 /* BPRTTableControlPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRTTableControlPanel.h; sourceTree = "<group>"; };
 		A8E913231B5A576E0058EC38 /* BPRTTableControlPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTTableControlPanel.m; sourceTree = "<group>"; };
+		A8E9132F1B5C78940058EC38 /* CommonHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHelpers.h; sourceTree = "<group>"; };
+		A8E913301B5C78940058EC38 /* CommonHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonHelpers.m; sourceTree = "<group>"; };
+		A8E913321B5C7BC80058EC38 /* BPRTCircleTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRTCircleTable.h; sourceTree = "<group>"; };
+		A8E913331B5C7BC80058EC38 /* BPRTCircleTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTCircleTable.m; sourceTree = "<group>"; };
+		A8E913351B5C7E3E0058EC38 /* BPRTBaseTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRTBaseTable.h; sourceTree = "<group>"; };
+		A8E913361B5C7E3E0058EC38 /* BPRTBaseTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTBaseTable.m; sourceTree = "<group>"; };
 		BBE21D1F1A32DC26A060196A /* Pods-CoreGraphicsTryer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreGraphicsTryer.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreGraphicsTryer/Pods-CoreGraphicsTryer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +121,8 @@
 		3053B0441B5620050057B62A /* CoreGraphicsTryer */ = {
 			isa = PBXGroup;
 			children = (
+				A8E9132F1B5C78940058EC38 /* CommonHelpers.h */,
+				A8E913301B5C78940058EC38 /* CommonHelpers.m */,
 				A8E913121B59F8230058EC38 /* Components */,
 				3053B06B1B5620250057B62A /* Controllers */,
 				3053B0491B5620050057B62A /* AppDelegate.h */,
@@ -176,8 +187,12 @@
 			children = (
 				A8E913131B59F8230058EC38 /* BPRTPolygonView.h */,
 				A8E913141B59F8230058EC38 /* BPRTPolygonView.m */,
+				A8E913351B5C7E3E0058EC38 /* BPRTBaseTable.h */,
+				A8E913361B5C7E3E0058EC38 /* BPRTBaseTable.m */,
 				A8E913151B59F8230058EC38 /* BPRTRectTable.h */,
 				A8E913161B59F8230058EC38 /* BPRTRectTable.m */,
+				A8E913321B5C7BC80058EC38 /* BPRTCircleTable.h */,
+				A8E913331B5C7BC80058EC38 /* BPRTCircleTable.m */,
 				A8E913191B59F8660058EC38 /* BPRTSearchBar.h */,
 				A8E9131A1B59F8660058EC38 /* BPRTSearchBar.m */,
 				A8E913221B5A576E0058EC38 /* BPRTTableControlPanel.h */,
@@ -321,10 +336,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8E913341B5C7BC80058EC38 /* BPRTCircleTable.m in Sources */,
 				A8E913181B59F8230058EC38 /* BPRTRectTable.m in Sources */,
+				A8E913311B5C78940058EC38 /* CommonHelpers.m in Sources */,
 				3053B06E1B5620430057B62A /* CoolTableViewController.m in Sources */,
 				3053B04E1B5620050057B62A /* ViewController.m in Sources */,
 				3053B04B1B5620050057B62A /* AppDelegate.m in Sources */,
+				A8E913371B5C7E3E0058EC38 /* BPRTBaseTable.m in Sources */,
 				A8E913241B5A576E0058EC38 /* BPRTTableControlPanel.m in Sources */,
 				A8E913171B59F8230058EC38 /* BPRTPolygonView.m in Sources */,
 				3053B0481B5620050057B62A /* main.m in Sources */,

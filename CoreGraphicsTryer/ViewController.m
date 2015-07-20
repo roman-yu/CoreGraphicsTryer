@@ -9,12 +9,16 @@
 #import "ViewController.h"
 
 #import "BPRTRectTable.h"
+#import "BPRTCircleTable.h"
 #import "BPRTSearchBar.h"
 #import "BPRTTableControlPanel.h"
+
+#import "CommonHelpers.h"
 
 @interface ViewController ()
 
 @property (nonatomic, strong) BPRTRectTable *rectTable;
+@property (nonatomic, strong) BPRTCircleTable *circleTable;
 
 @property (nonatomic, assign) BOOL showSearchBar;
 @property (nonatomic, strong) UIView *searchBarContainer;
@@ -41,7 +45,10 @@
     self.rectTable.frame = CGRectMake(200.f, 200.f, 66.f, 86.f);
     [self.view addSubview:self.rectTable];
     
-    self.controller = [[BPRTTableControlPanel alloc] initWithFrame:CGRectMake(400.f, 400.f, 200.f, 200.f)];
+    self.circleTable = [[BPRTCircleTable alloc] initWithFrame:CGRectMake(200.f, 400.f, 140.f, 140.f)];
+    [self.view addSubview:self.circleTable];
+    
+    self.controller = [[BPRTTableControlPanel alloc] initWithFrame:CGRectMake(400.f, 400.f + 0.5f, 200.f, 200.f)];
     [self.view addSubview:self.controller];
     
     self.showSearchBar = NO;
@@ -103,12 +110,14 @@
     
 //    self.rectTable.transform = CGAffineTransformMakeScale(self.scaleFactor, self.scaleFactor);
     CGRect frame = self.controller.frame;
-    frame.size.width *= self.scaleFactor;
-    frame.size.height *= self.scaleFactor;
-    self.controller.frame = frame;
-    self.controller.center = self.centerPoint;
-    
-    self.prevPoint = point;
+    if ([CommonHelpers numberIsFraction:[NSNumber numberWithFloat:frame.size.width * self.scaleFactor]] && [CommonHelpers numberIsFraction:[NSNumber numberWithFloat:frame.size.height * self.scaleFactor]]) {
+        frame.size.width *= self.scaleFactor;
+        frame.size.height *= self.scaleFactor;
+        self.controller.frame = frame;
+        self.controller.center = self.centerPoint;
+        
+        self.prevPoint = point;
+    }
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
@@ -118,6 +127,13 @@
 }
 
 #pragma mark - Internal Helper
+
+//- (BOOL)isIntegerOrNor:(CGFloat)number {
+//    if (number < 0.0)
+//        return (number != ceil(number));
+//    else
+//        return (number != floor(number));
+//}
 
 - (CGFloat)distanceToCenter:(CGPoint)point {
     return sqrtf( powf(self.centerPoint.x - point.x, 2) + powf(self.centerPoint.y - point.y, 2) );

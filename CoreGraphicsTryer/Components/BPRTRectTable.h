@@ -6,22 +6,9 @@
 //  Copyright (c) 2015 Chen YU. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BPRTBaseTable.h"
 
-typedef enum  {
-    SeatDirectionTop = 0,
-    SeatDirectionLeft,
-    SeatDirectionBottom,
-    SeatDirectionRight
-} SeatDirection;
-
-typedef enum  {
-    TableSidedOne = 0,
-    TableSidedTwo,
-    TableSidedFour
-} TableSided;
-
-@interface BPRTRectTable : UIView
+@interface BPRTRectTable : BPRTBaseTable
 
 - (instancetype)initWithNumberOfSeats:(NSInteger)numberOfSeats tableSided:(TableSided)tableSided;
 
