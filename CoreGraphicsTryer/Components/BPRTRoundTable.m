@@ -36,6 +36,12 @@
     [super layoutSubviews];
 }
 
+- (void)updateConstraints {
+    [self.seatImageView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero];
+    
+    [super updateConstraints];
+}
+
 - (void)drawSeats {
     for (int i = 0; i < self.numberOfSeats; i++) {
         UIColor *color = [@[[UIColor redColor], [UIColor greenColor], [UIColor blueColor], [UIColor purpleColor]] objectAtIndex:(arc4random() % 4)];

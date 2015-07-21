@@ -16,6 +16,7 @@
 		3053B0561B5620050057B62A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3053B0541B5620050057B62A /* LaunchScreen.xib */; };
 		3053B0621B5620050057B62A /* CoreGraphicsTryerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3053B0611B5620050057B62A /* CoreGraphicsTryerTests.m */; };
 		3053B06E1B5620430057B62A /* CoolTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3053B06D1B5620430057B62A /* CoolTableViewController.m */; };
+		307201F71B5E52C70063A33C /* BPRTBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 307201F61B5E52C70063A33C /* BPRTBaseButton.m */; };
 		368966825D2E0EE5489FDA9E /* libPods-CoreGraphicsTryer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD1C2B36077170CD16BA7BE /* libPods-CoreGraphicsTryer.a */; };
 		A8E913171B59F8230058EC38 /* BPRTPolygonView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E913141B59F8230058EC38 /* BPRTPolygonView.m */; };
 		A8E913181B59F8230058EC38 /* BPRTRectTable.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E913161B59F8230058EC38 /* BPRTRectTable.m */; };
@@ -58,6 +59,8 @@
 		3053B06C1B5620430057B62A /* CoolTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolTableViewController.h; sourceTree = "<group>"; };
 		3053B06D1B5620430057B62A /* CoolTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolTableViewController.m; sourceTree = "<group>"; };
 		3053B06F1B5621D70057B62A /* CoreGraphicsTryer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreGraphicsTryer-Prefix.pch"; sourceTree = "<group>"; };
+		307201F51B5E52C70063A33C /* BPRTBaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRTBaseButton.h; sourceTree = "<group>"; };
+		307201F61B5E52C70063A33C /* BPRTBaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTBaseButton.m; sourceTree = "<group>"; };
 		9633E9259B0CAE3BFAB9304C /* Pods-CoreGraphicsTryer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreGraphicsTryer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreGraphicsTryer/Pods-CoreGraphicsTryer.debug.xcconfig"; sourceTree = "<group>"; };
 		A8E913131B59F8230058EC38 /* BPRTPolygonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRTPolygonView.h; sourceTree = "<group>"; };
 		A8E913141B59F8230058EC38 /* BPRTPolygonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTPolygonView.m; sourceTree = "<group>"; };
@@ -201,6 +204,8 @@
 				A8E913141B59F8230058EC38 /* BPRTPolygonView.m */,
 				A8E913351B5C7E3E0058EC38 /* BPRTBaseTable.h */,
 				A8E913361B5C7E3E0058EC38 /* BPRTBaseTable.m */,
+				307201F51B5E52C70063A33C /* BPRTBaseButton.h */,
+				307201F61B5E52C70063A33C /* BPRTBaseButton.m */,
 				A8E913151B59F8230058EC38 /* BPRTRectTable.h */,
 				A8E913161B59F8230058EC38 /* BPRTRectTable.m */,
 				A8E913321B5C7BC80058EC38 /* BPRTRoundTable.h */,
@@ -367,6 +372,7 @@
 				3053B04B1B5620050057B62A /* AppDelegate.m in Sources */,
 				A8E913371B5C7E3E0058EC38 /* BPRTBaseTable.m in Sources */,
 				A8E9135E1B5DCD4C0058EC38 /* BPRTTabBar.m in Sources */,
+				307201F71B5E52C70063A33C /* BPRTBaseButton.m in Sources */,
 				A8E913241B5A576E0058EC38 /* BPRTTableControlPanel.m in Sources */,
 				A8E9135F1B5DCD4C0058EC38 /* BPScrollableIndicator.m in Sources */,
 				A8E913171B59F8230058EC38 /* BPRTPolygonView.m in Sources */,
