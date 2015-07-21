@@ -124,8 +124,8 @@ const CGFloat kButtonSize = 40.f;
     // Drawing code
     if (!CGRectIsNull(self.bounds)) {
         UIBezierPath *path = [UIBezierPath bezierPath];
-        [path addArcWithCenter:CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2)
-                        radius:self.bounds.size.width / 2
+        [path addArcWithCenter:CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2 + 0.5)
+                        radius:self.bounds.size.width / 2 - 1.5
                     startAngle:0
                       endAngle:2 * M_PI
                      clockwise:YES];

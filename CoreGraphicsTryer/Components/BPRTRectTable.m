@@ -8,14 +8,6 @@
 
 #import "BPRTRectTable.h"
 
-const CGFloat kTableBaseWidth           = 50.f;
-const CGFloat kTableBaseHeight          = 70.f;
-
-const CGFloat kSeatWidth                = 20.f;
-const CGFloat kSeatHeight               = 5.f;
-
-const CGFloat tableHorizontalSpacing    = 10.f;
-
 @interface BPRTRectTable ()
 
 @property (nonatomic, assign) NSInteger numberOfSeats;
@@ -78,34 +70,6 @@ const CGFloat tableHorizontalSpacing    = 10.f;
             
         }
     }
-}
-
-- (void)drawSeatWithOrigin:(CGPoint)origin seatDirection:(SeatDirection)seatDirection {
-    
-    UIRectCorner corner = UIRectCornerAllCorners;
-    switch (seatDirection) {
-        case SeatDirectionTop:
-            corner = UIRectCornerBottomLeft | UIRectCornerBottomRight;
-            break;
-        case SeatDirectionLeft:
-            corner = UIRectCornerTopRight | UIRectCornerBottomRight;
-            break;
-        case SeatDirectionBottom:
-            corner = UIRectCornerTopLeft | UIRectCornerTopRight;
-            break;
-        case SeatDirectionRight:
-            corner = UIRectCornerTopLeft | UIRectCornerBottomLeft;
-            break;
-            
-        default:
-            break;
-    }
-    
-    UIBezierPath* path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(origin.x, origin.y, kSeatWidth, kSeatHeight)
-                                               byRoundingCorners:corner
-                                                     cornerRadii:CGSizeMake(5.0, 5.0)];
-    [[UIColor colorWithRed:224.0 / 255.0 green:231.0 / 255.0 blue:239.0 / 255.0 alpha:1.0] setFill];
-    [path fill];
 }
 
 @end
