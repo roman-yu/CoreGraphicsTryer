@@ -12,6 +12,7 @@
 #import "BPRTCircleTable.h"
 #import "BPRTSearchBar.h"
 #import "BPRTTableControlPanel.h"
+#import "BPRTTabBar.h"
 
 #import "CommonHelpers.h"
 
@@ -25,6 +26,9 @@
 @property (nonatomic, strong) BPRTSearchBar *searchBar;
 @property (nonatomic, strong) BPRTSearchBar *searchBar2;
 @property (nonatomic, strong) BPRTTableControlPanel *controller;
+
+@property (nonatomic, strong) BPRTTabBar *tabBar;
+@property (nonatomic, strong) UIButton *addTabButton;
 
 @property (nonatomic, assign) CGFloat scaleFactor;
 
@@ -65,6 +69,16 @@
         [self.searchBarContainer addSubview:self.searchBar2];
     }
     
+    self.addTabButton = [UIButton new];
+    self.addTabButton.backgroundColor = [UIColor cyanColor];
+    [self.addTabButton setTitle:@"Add new tab" forState:UIControlStateNormal];
+    [self.addTabButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.addTabButton addTarget:self action:@selector(newTab) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.addTabButton];
+    
+    self.tabBar = [[BPRTTabBar alloc] initWithTabNames:@[@"Beverage", @"Drinks", @"Starter"]];
+    [self.view addSubview:self.tabBar];
+    
     self.centerPoint = CGPointMake(500.f, 500.f);
 }
 
@@ -86,6 +100,13 @@
         [self.searchBar2 autoSetDimensionsToSize:CGSizeMake(320.f, 60.f)];
     }
     
+    [self.addTabButton autoAlignAxis:ALAxisVertical toSameAxisOfView:self.view];
+    [self.addTabButton autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.view withOffset:-100.f];
+    [self.addTabButton autoSetDimensionsToSize:CGSizeMake(100.f, 40.f)];
+    
+    [self.tabBar autoCenterInSuperview];
+    [self.tabBar autoSetDimensionsToSize:CGSizeMake(664.f, 40.f)];
+    
     [super updateViewConstraints];
 }
 
@@ -94,6 +115,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - User Interaction
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
@@ -124,6 +147,15 @@
 {
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:self.view];
+}
+
+- (void)newTab {
+    [self.tabBar insertTabWithName:@"Hello world 0" atIndex:0];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.tabBar insertTabWithName:@"Hello world 2" atIndex:2];
+    });
+    
 }
 
 #pragma mark - Internal Helper

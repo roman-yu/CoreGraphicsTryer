@@ -23,6 +23,8 @@
 		A8E913311B5C78940058EC38 /* CommonHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E913301B5C78940058EC38 /* CommonHelpers.m */; };
 		A8E913341B5C7BC80058EC38 /* BPRTCircleTable.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E913331B5C7BC80058EC38 /* BPRTCircleTable.m */; };
 		A8E913371B5C7E3E0058EC38 /* BPRTBaseTable.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E913361B5C7E3E0058EC38 /* BPRTBaseTable.m */; };
+		A8E9135E1B5DCD4C0058EC38 /* BPRTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E9135B1B5DCD4C0058EC38 /* BPRTTabBar.m */; };
+		A8E9135F1B5DCD4C0058EC38 /* BPScrollableIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E9135D1B5DCD4C0058EC38 /* BPScrollableIndicator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,10 @@
 		A8E913331B5C7BC80058EC38 /* BPRTCircleTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTCircleTable.m; sourceTree = "<group>"; };
 		A8E913351B5C7E3E0058EC38 /* BPRTBaseTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRTBaseTable.h; sourceTree = "<group>"; };
 		A8E913361B5C7E3E0058EC38 /* BPRTBaseTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTBaseTable.m; sourceTree = "<group>"; };
+		A8E9135A1B5DCD4C0058EC38 /* BPRTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRTTabBar.h; sourceTree = "<group>"; };
+		A8E9135B1B5DCD4C0058EC38 /* BPRTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRTTabBar.m; sourceTree = "<group>"; };
+		A8E9135C1B5DCD4C0058EC38 /* BPScrollableIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPScrollableIndicator.h; sourceTree = "<group>"; };
+		A8E9135D1B5DCD4C0058EC38 /* BPScrollableIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPScrollableIndicator.m; sourceTree = "<group>"; };
 		BBE21D1F1A32DC26A060196A /* Pods-CoreGraphicsTryer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreGraphicsTryer.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreGraphicsTryer/Pods-CoreGraphicsTryer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,6 +191,7 @@
 		A8E913121B59F8230058EC38 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A8E913591B5DCD4C0058EC38 /* BPRTTabBar */,
 				A8E913131B59F8230058EC38 /* BPRTPolygonView.h */,
 				A8E913141B59F8230058EC38 /* BPRTPolygonView.m */,
 				A8E913351B5C7E3E0058EC38 /* BPRTBaseTable.h */,
@@ -199,6 +206,17 @@
 				A8E913231B5A576E0058EC38 /* BPRTTableControlPanel.m */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		A8E913591B5DCD4C0058EC38 /* BPRTTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A8E9135A1B5DCD4C0058EC38 /* BPRTTabBar.h */,
+				A8E9135B1B5DCD4C0058EC38 /* BPRTTabBar.m */,
+				A8E9135C1B5DCD4C0058EC38 /* BPScrollableIndicator.h */,
+				A8E9135D1B5DCD4C0058EC38 /* BPScrollableIndicator.m */,
+			);
+			path = BPRTTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,7 +361,9 @@
 				3053B04E1B5620050057B62A /* ViewController.m in Sources */,
 				3053B04B1B5620050057B62A /* AppDelegate.m in Sources */,
 				A8E913371B5C7E3E0058EC38 /* BPRTBaseTable.m in Sources */,
+				A8E9135E1B5DCD4C0058EC38 /* BPRTTabBar.m in Sources */,
 				A8E913241B5A576E0058EC38 /* BPRTTableControlPanel.m in Sources */,
+				A8E9135F1B5DCD4C0058EC38 /* BPScrollableIndicator.m in Sources */,
 				A8E913171B59F8230058EC38 /* BPRTPolygonView.m in Sources */,
 				3053B0481B5620050057B62A /* main.m in Sources */,
 				A8E9131B1B59F8660058EC38 /* BPRTSearchBar.m in Sources */,
